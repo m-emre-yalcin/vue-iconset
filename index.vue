@@ -54,7 +54,7 @@
                     return svg.outerHTML
                 } else {
                     console.warn(`"${this.name}" icon couldn't found!`)
-                    return `<b style="font-size:10px;color: red">"${this.name}" icon not found!</b>`
+                    return `<b style="font-size:10px;color: red">"${this.name}" icon is not found!</b>`
                 }
             }
         },
