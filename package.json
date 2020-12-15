@@ -1,0 +1,14 @@
+{
+  "name": "vue-iconset",
+  "version": "0.9.0",
+  "description": "iconset utility for vue projects",
+  "main": "index.vue",
+  "keywords": [
+    "vue",
+    "iconset",
+    "icon",
+    "svgset"
+  ],
+  "author": "M.Emre Yalcin",
+  "license": "MIT"
+}
