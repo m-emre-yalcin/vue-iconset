@@ -1,15 +1,19 @@
 {
   "name": "vue-iconset",
-  "version": "0.9.1",
+  "version": "0.9.8",
   "description": "iconset utility for vue projects",
-  "main": "index.vue",
-  "private": true,
+  "main": "dist/app.33c770fa.js",
+  "public": false,
   "keywords": [
     "vue",
     "iconset",
     "icon",
-    "svgset"
+    "svg iconset"
   ],
   "author": "M.Emre Yalcin",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12"
+  }
 }

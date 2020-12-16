@@ -1,6 +1,6 @@
 # vue-iconset
 
-This iconset component will make easier to work with svg icons on your vue project.
+This iconset component will make easier to work with svg icons in your vue project.
 
 ## Installation
 
@@ -10,26 +10,19 @@ This iconset component will make easier to work with svg icons on your vue proje
 
 ```js
 // main.js
+let options = {
+    icons: {
+        icon:"<svg><path>...</svg>"
+    }
+}
+
 import Vue from 'vue'
 import VueIconset from 'vue-iconset'
-import icons from 'vue-iconset/icons' // all svg are here (optional)
-
-Vue.component('icon', {
-    extends: VueIconset,
-    props: {
-        icons: icons, // you can extend this object or use your own icons object
-        // you can set default values here
-        // height: 30px,
-        // width: 30px,
-        // fill: 'white'
-        // .
-        // .
-        // .
-    }
-})
+Vue.use(VueIconset, options)
 ```
 
 ### After configuration you can use it in all templates!
+
 ```html
 <template>
     <icon name="document" fill="green"/>
@@ -39,17 +32,13 @@ Vue.component('icon', {
 ## Options
 
 ```js
-// there are some default icons you can use in 'icons.js' file:
+// there are some default icons you can use in 'default-icons.js' file:
 ["attach", "ban", "camera", "close", "comment", "completed", "confirm", "cursor", "dashboard", "delete", "document", "down-arrow", "download", "edit", "eye", "filter", "flip", "history", "image", "info", "key", "label", "layers", "like", "logout", "mail", "mention", "minus", "more", "new-form", "not-completed", "notification", "ok", "password", "pinned", "plus", "refresh", "settings", "share-link", "star", "trash", "user", "warning"]
 ```
 
 ```js
-// vue-iconset props:
+// default properties:
 props: {
-    icons: {
-        type: Object,
-        default: {}
-    },
     name: {
         type: String,
         default: 'star'
@@ -74,17 +63,4 @@ props: {
         default: "0deg"
     },
 }
-```
-
-```js
-// example icons.js object:
-export default {
-    attach: '<svg xmlns="http://www.w3.org/2000/sv...',
-    ban: '<svg viewBox="0 -256 1792 1792"...',
-    camera: '<svg version="1.1" id="Layer_1"..."',
-    // .
-    // .
-    // .
-    // .
-
 ```
