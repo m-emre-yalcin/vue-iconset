@@ -1,6 +1,6 @@
 {
   "name": "vue-iconset",
-  "version": "0.9.9",
+  "version": "1.0.0",
   "description": "iconset utility for vue projects",
   "main": "index.js",
   "public": false,

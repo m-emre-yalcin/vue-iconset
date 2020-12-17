@@ -7,7 +7,7 @@ export default {
         else options.icons = { ...default_icons, ...options.icons } // merge icons
         
         Vue.component('icon', {
-            template: `<div :class="icon-name" v-html="svg"/>`,
+            template: `<div v-html="svg"/>`,
             data(){
                 return {
                     icons: options.icons
